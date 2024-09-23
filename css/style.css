@@ -1,0 +1,44 @@
+
+
+form ,nav
+{
+    box-shadow: 3px 3px 5px 9px rgb(25, 71, 224) ;
+
+}
+
+input::placeholder {
+    color: rgb(207, 204, 204) !important;
+   
+  }
+
+  a{
+    transition: all 0.5s;
+  }
+  a:hover
+  {
+    text-decoration: underline !important;
+  }
+  button.btn
+  {
+    transition: all 0.5s;
+
+  }
+
+   button.btn:hover
+  {
+    color: white !important;
+background-color:  rgb(13, 117, 236) !important;
+  }
+
+  button.ms-auto
+  {
+    transition: all 0.5s;
+
+  }
+
+   button.ms-auto:hover
+  {
+    color: white !important;
+background-color:  rgb(236, 13, 13) !important;
+  }
+

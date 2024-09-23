@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <title>LogIn System</title>
+</head>
+
+<body class="bg-dark d-flex flex-column justify-content-center align-items-center align-content-center">
+
+    <nav id="navbar" class="navbar navbar-dark w-100 bg-dark text-white d-none">
+        <div class="container">
+          <a class="navbar-brand text-decoration-none" href="#"> SMART LOGIN </a>
+          <button class="ms-auto bg-transparent text-white border-danger p-2" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <form id="loginForm" class="bg-dark w-75 m-auto m-5 mt-5">
+       <div class="container w-75">
+        <h1 class="py-5 text-primary text-center">Smart Login System</h1>
+        <div class="mb-3">
+            <input type="text" placeholder="Enter Your Name" class="d-none bg-transparent text-white form-control" id="Name">
+        </div>
+        <div class="mb-3">
+          <input type="email" placeholder="Enter Your Email" class="form-control bg-transparent text-white" id="InputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <input type="password" placeholder="Enter Your Password" class="form-control bg-transparent text-white" id="InputPassword">
+        </div>
+        <button id="Signup" type="submit" class="btn btn-primary w-100 bg-transparent text-primary my-4 d-none" onclick="signup(event)">Signup</button>
+        <button id="login" type="submit" class="btn btn-primary w-100 bg-transparent text-primary my-4">Login</button>
+        <h2 class="text-center text-success d-none " id="h2">Success</h2>
+        <div class="d-flex justify-content-center">
+            <h3 class="h6 text-white pb-5">Don’t have an account? </h3>
+            <a href="#" id="enter" class=" d-none text-decoration-none text-white fs-6 px-1" onclick="loginToggle()">Sign in</a>
+
+            <a href="#" id="outer" class="text-decoration-none text-white fs-6 px-1" onclick="signupToggle()">Sign Up</a>
+        </div>
+       </div>
+    </form>
+
+    <section id="home" class="d-flex justify-content-center align-items-center">
+        <div class="welcome" >
+          
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
